@@ -1,10 +1,11 @@
-*{
+* {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-  *::after {
+
+*::after {
     box-sizing: border-box;
 }
-  
+
 html,
 body,
 .wrapper {
@@ -12,26 +13,29 @@ body,
     margin: 0;
     padding: 0;
 }
-  /* i just like dark theme sites */
+
+/* i just like dark theme sites */
 body {
     background-color: #000;
+    text-align: center;
 }
-  
+
 .wrapper {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
+
 }
-  
+
 header {
     text-align: center;
     padding: 20px;
     padding-top: 0px;
     color: whitesmoke;
 }
-  
+
 .card {
-    background-color: #000 ;
+    background-color: #000;
     border-radius: 5px;
     border-width: 1px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -41,7 +45,7 @@ header {
     max-width: 800px;
     padding: 30px 40px;
 }
-  
+
 .card-header::after {
     content: " ";
     display: block;
@@ -49,15 +53,15 @@ header {
     background: #e7e9eb;
     height: 2px;
 }
-  
+
 .card-body {
     min-height: 100px;
 }
-  
+
 .card-footer {
     text-align: center;
 }
-  
+
 .card-footer::before {
     content: " ";
     display: block;
@@ -65,17 +69,17 @@ header {
     background: #e7e9eb;
     height: 2px;
 }
-  
+
 .card-footer::after {
     content: " ";
     display: block;
     clear: both;
 }
-  
+
 .float-right {
     float: right;
 }
-  
+
 #password {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -100,57 +104,35 @@ header {
     cursor: pointer;
     position: relative;
     color: #e7e9eb;
-    animation: glowing 30s infinite;
+
+    animation: glowing 30s ease-in-out infinite;
 }
-  
+
 @keyframes glowing {
-    0% { box-shadow: 0 0 0px purple; }
-    50% { box-shadow: 0 0 50px purple; }
-    100% { box-shadow: 0 0 0px purple; }
+    0% {
+        box-shadow: 0 0 0px purple;
+    }
+
+    50% {
+        box-shadow: 0 0 50px purple;
+    }
+
+    100% {
+        box-shadow: 0 0 0px purple;
+    }
 }
-  
-  
+
+
 @media (max-width: 690px) {
     .btn {
-      font-size: 1rem;
-      margin: 16px 0px 0px 0px;
-      padding: 10px 15px;
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
     }
 }
-  
+
 @media (max-width: 500px) {
     .btn {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
 }
-  
-.btn {
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-  
-  
-.btn:active {
-    background-color: darkred;
-    transform: translateY(2px);
-    border-color: darkred;
-    animation: flash 1s ease-out infinite;
-}
-  
-@keyframes flash{
-    0%{
-      border-color: darkred;
-    }
-  
-    50%{
-      border-color: red;
-    }
-}
-  
