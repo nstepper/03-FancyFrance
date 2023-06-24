@@ -1,17 +1,18 @@
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 *::after {
     box-sizing: border-box;
 }
 
+
 html,
 body,
 .wrapper {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* i just like dark theme sites */
@@ -20,19 +21,22 @@ body {
     text-align: center;
 }
 
+
 .wrapper {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
+
 
 header {
-    text-align: center;
-    padding: 20px;
-    padding-top: 0px;
-    color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: whitesmoke;
 }
+
 
 .card {
     background-color: #000;
@@ -46,39 +50,46 @@ header {
     padding: 30px 40px;
 }
 
+
 .card-header::after {
-    content: " ";
-    display: block;
-    width: 100%;
-    background: #e7e9eb;
-    height: 2px;
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
 }
+
 
 .card-body {
-    min-height: 100px;
+  min-height: 100px;
 }
+
 
 .card-footer {
-    text-align: center;
+  text-align: center;
 }
+
 
 .card-footer::before {
-    content: " ";
-    display: block;
-    width: 100%;
-    background: #e7e9eb;
-    height: 2px;
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
 }
+
 
 .card-footer::after {
-    content: " ";
-    display: block;
-    clear: both;
+  content: " ";
+  display: block;
+  clear: both;
 }
 
+
 .float-right {
-    float: right;
+  float: right;
 }
+
 
 #password {
     -webkit-appearance: none;
@@ -108,6 +119,7 @@ header {
     animation: glowing 30s ease-in-out infinite;
 }
 
+
 @keyframes glowing {
     0% {
         box-shadow: 0 0 0px purple;
@@ -123,7 +135,14 @@ header {
 }
 
 
+
+
 @media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
     .btn {
         font-size: 1rem;
         margin: 16px 0px 0px 0px;
@@ -131,8 +150,10 @@ header {
     }
 }
 
+
 @media (max-width: 500px) {
     .btn {
         font-size: 0.8rem;
     }
 }
+  
